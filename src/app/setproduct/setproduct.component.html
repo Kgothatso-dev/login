@@ -1,14 +1,16 @@
+<header pageTitle="SetProducts" iconTitle="settings" helpTitle="Aboutuspagehelp"></header>
 <mat-card>
     <mat-card-content>
-        <div> *ngIf="(toggleFieldd=='serchMode') else (toggleField=='addMode')? showMode : ((togglefield=='editMode')? showField : showResMode)">
+        <div *ngIf="(toggleField=='serchMode') else (toggleField=='addMode')? showAddMode : ((toggleField=='editMode')? showEditMode : showResMode)">
             <!--search page here -->
+            Search page 
         </div>
     </mat-card-content>
 </mat-card>
 <ng-template #showAddMode>
     <!--add page here -->
 </ng-template>
-<ng-template #showeditMode>
+<ng-template #showEditMode>
     <!--edit page here -->
 </ng-template>
 <ng-template #showResMode>

@@ -8,9 +8,9 @@
     {{pageTitle}}
     <span class="example-spacer"></span>
     <span class="example-icon"></span>
-    <mat-icon [color]= "userStatusColor">accout_box</mat-icon>
+    <mat-icon [color]="userStatusColor">accout_box</mat-icon>
     <span class="example-icon"></span>
-    <mat-icon matBadge = "{{counter}}" matbadgePosition = "before" matBadgeColor = "accent">shopping_cart</mat-icon>
+    <mat-icon matBadge="{{counter}}" matbadgePosition="before" matBadgeColor="accent">shopping_cart</mat-icon>
     <span class="example-icon"></span>
     <mat-icon [matMenuTriggerFor]="helpMenu">help_outline</mat-icon>
     <span class="example-icon"></span>
@@ -38,7 +38,7 @@
         <button mat-menu-item routerLink="/aboutus">
             <mat-icon>Info</mat-icon>
         </button>
-        <button mat-menu-item routerLink="/settings">
+        <button mat-menu-item routerLink="/setproduct">
             <mat-icon>Settings</mat-icon>
         </button>
     </mat-menu>
