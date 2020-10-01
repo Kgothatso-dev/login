@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-content>
+        <div> *ngIf="(toggleFieldd=='serchMode') else (toggleField=='addMode')? showMode : ((togglefield=='editMode')? showField : showResMode)">
+            <!--search page here -->
+        </div>
+    </mat-card-content>
+</mat-card>
+<ng-template #showAddMode>
+    <!--add page here -->
+</ng-template>
+<ng-template #showeditMode>
+    <!--edit page here -->
+</ng-template>
+<ng-template #showResMode>
+    <!--results page here -->
+</ng-template>
